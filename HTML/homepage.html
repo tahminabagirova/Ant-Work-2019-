@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CALENDAR -->
+    <link rel="stylesheet" href="../CSS/jquery-ui.css">
+
+    <!-- Bootstrap CSS, CSS(animate) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/animate.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- FavIcon -->
+    <link rel="icon" href="/favicon.icon" type="img/ant-logo.ico" />
+    <link rel="shortcut icon" href="../img/ant-logo.png" type="" />
+
+
+    <title>Ana Səhifə</title>
+</head>
+
+<body>
+    <div class="layer-mobile"></div>
+    <div class="layer-create-work"></div>
+    <!--=================================== HEADER================== -->
+    <header>
+        <div class="nav-ant background-nav-ant">
+            <div class="nav-ant-layer"></div>
+            <div class="container d-flex justify-content-between flex-row">
+                <div class="left-nav-ant d-flex flex-row align-items-center justify-content-start pl-0">
+                    <div class="logo-cont-ant my-2">
+                        <a href="./homepage.html">
+                            <img src="../img/ant-logo(1).png" alt="" class="logo-ant">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="" class="mx-4 pl-3">
+                            NECƏ?
+                        </a>
+                        <a href="" class="mx-3">
+                            Ə.Ç.S.S
+                        </a>
+                        <a href="" class="mx-3">
+                            ƏLAQƏ
+                        </a>
+                        <!-- <a href="" class="mx-3">
+                            İŞLƏRİM
+                        </a> -->
+                    </div>
+                </div>
+                <div class="right-nav-ant  d-flex flex-row align-items-center justify-content-end pr-0">
+                    <div class="cont-user-btn">
+                        <button class="user-btn">
+                            <i class="fas fa-user pl-1"></i>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <!-- CONT CLICK USER CLICK -->
+                    <div class="cont-click-user d-flex flex-column justify-content-center align-items-center">
+                        <a href="./profile.html" class="px-5 py-2 text-center border-bottom for-click">Profil</a>
+                        <a href="./login.html" class="px-5 py-2 text-center border-bottom for-click">Çıxış et</a>
+                    </div>
+                    <!-- //CONT CLICK USER CLICK -->
+                    <div class="cont-bell px-2">
+                        <button class="bell-btn">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                    <!-- CONT BELL CLICK -->
+                    <div class="cont-bell-click d-flex justify-content-center align-items-center">
+                        <p class="child-cont-bell-click text-light text-center px-5 py-1 my-2">Bildirim yoxdur</p>
+                    </div>
+                    <!-- //CONT BELL CLICK -->
+                    <div class="cont-bars">
+                        <button class="bars">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="layer-mobile"></div>
+        <div class="mobile-menu-ant">
+            <div class="child-mobile-menu-ant">
+                <a href="" class="mx-4 my-2 pt-3">
+                    NECƏ?
+                </a>
+                <a href="" class="mx-4 my-2">
+                    Ə.Ç.S.S
+                </a>
+                <a href="" class="mx-4 my-2">
+                    ƏLAQƏ
+                </a>
+            </div>
+            <div class="cont-times">
+                <button class="times">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ================================//HEADER===================== -->
+
+    <!-- dumps -->
+    <div class="blog-section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="box-for-dumps d-flex flex-row justify-content-between align-items-center my-5">
+                    <div class="text-dump pl-4 text-light">
+                        <i class="fas fa-check check pr-2"></i>
+                        <b>Salam Təhminə! </b>elan yarat...
+                    </div>
+                    <button class="dump-btn create-work-pop-up-btn py-2 px-5 my-4 mx-4">
+                        Elan yarat
+                    </button>
+                </div>
+                <div class="text-announcement pb-3">
+                    <h3>
+                        Mövcud işlər
+                    </h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //dumps -->
+
+    <!--== CREATE WORK POP UP ===-->
+    <div class="toggler-nav">
+        <div class="toggler-nav-child">
+            <div class="create-work-pop-up d-flex justify-content-center align-items-center">
+                <div class="child-create-work-pop-up">
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <h5 class="text-center py-3 pl-5 ml-2">Yeni elan yarat</h5>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="times-create-work mt-3">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form class="form d-flex my-3 w-100" action="" method="POST">
+                                <select id="workCategory" name="category" class="category w-100 px-2">
+                                    <option value="">Kateqoriya</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">Dərs/Tərcümə</option>
+                                    <option value="">Məzmun hazırlığı</option>
+                                    <option value="">Qrafika/Dizayn/Video</option>
+                                    <option value="">Sosial media/Məhsul təqdimatı</option>
+                                    <option value="">Proqram</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="" class="my-3">
+                                <select id="priceCategory" value="ttt" name="category" id=""
+                                    class="budget w-100 category px-2">
+                                    <option value="">Büdcə</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">0-50 azn</option>
+                                    <option value="">50-100 azn</option>
+                                    <option value="">100-200 azn</option>
+                                    <option value="">200-500 azn</option>
+                                    <option value="">500 və daha çox</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php">
+                                <input class="category vali w-100 pl-2" type="text" id="datepicker"
+                                    placeholder="İş elanının başlama tarixi">
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php">
+                                <input class="category vali w-100 pl-2" type="text" id="datepickers"
+                                    placeholder="İş elanının bitmə tarixi">
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-light">Başlıq</label>
+                                <textarea name="" id="" rows="4" id="titleTextarea" placeholder="Başlıq"
+                                    class="pl-2 pr-2 pt-2 category vali"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-light">Mesaj yazın</label>
+                                <textarea name="" id="" rows="4" placeholder="Mesajınızı yazın"
+                                    class="pl-2 pr-2 pt-2 category vali"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <h5 class="text-danger danger-p-item">Xanalar bosdur!!!</h5>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <button onclick="validateForWork()"
+                                class="btn btn-register finish-btn-create-work mt-2 my-3 w-100 p-0">Yarat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--= //CREATE WORK POP UP=== -->
+
+    <!-- CREATE WORK POP UP MOBILE -->
+    <div class="toggler-nav-mobile d-flex justify-content-center align-items-center">
+        <div class="toggler-nav-child-mobile">
+            <div class="create-work-pop-up d-flex justify-content-center align-items-center">
+                <div class="child-create-work-pop-up">
+                    <div class="row m-0">
+                        <div class="col-lg-10">
+                            <h5 class="text-center py-3">Yeni elan yarat</h5>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="times-create-work mt-3">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="form d-flex my-3 w-100" action="" method="POST">
+                                <select name="category" class="category w-100 px-2">
+                                    <option value="">Kateqoriya</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">Dərs/Tərcümə</option>
+                                    <option value="">Məzmun hazırlığı</option>
+                                    <option value="">Qrafika/Dizayn/Video</option>
+                                    <option value="">Sosial media/Məhsul təqdimatı</option>
+                                    <option value="">Proqram</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="" class="my-3">
+                                <select name="category" class="budget w-100 category px-2">
+                                    <option value="">Büdcə</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">0-50 azn</option>
+                                    <option value="">50-100 azn</option>
+                                    <option value="">100-200 azn</option>
+                                    <option value="">200-500 azn</option>
+                                    <option value="">500 və daha çox</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php" class="my-3">
+                                <input class="category w-100 pl-2" type="text" id="datepicker"
+                                    placeholder="İş elanının başlama tarixi">
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php" class="my-3">
+                                <input class="category w-100 pl-2" type="text" id="datepickers"
+                                    placeholder="İş elanının bitmə tarixi">
+                            </form>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-light">Mesaj yazın</label>
+                                <textarea name="" id="" rows="4" placeholder="Ətraflı"
+                                    class="pl-2 pr-2 pt-2 category"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <button onclick="validateForWork()"
+                                class="btn btn-register finish-btn-create-work mt-2 my-3 w-100 p-0">Yarat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //CREATE WORK POP UP MOBILE -->
+
+    <!-- SEND WORK POP UP -->
+    <div class="send-work-pop-up d-flex justify-content-center">
+        <div class="child-send-work-pop-up wow heartBeat">
+            <div class="text-pop-up-work-send d-flex justify-content-center align-items-center py-5">
+                <span class="text-light">
+                    <i class="fas fa-check"></i> Elanınız yerləşdirildi!
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- //SEND WORK POP UP -->
+
+    <!--====================== ANNOUNCEMENT SECTION ==============-->
+    <div class="announcement-section my-5">
+        <div class="container">
+            <!-- TOOLS -->
+            <div class="row d-flex">
+                <div class="first-form my-2">
+                    <form action="">
+                        <i class="fas fa-search ml-3"></i>
+                        <input type="text" class="input-at ml-2 pl-2" placeholder="Axtar">
+                    </form>
+                </div>
+                <div class="second-form pl-4 my-2">
+                    <select name="kateqoriya" id="" class="category px-2">
+                        <option value="">Kateqoriya</option>
+                        <option value="">Hamısı</option>
+                        <option value="">Dərs/Tərcümə</option>
+                        <option value="">Məzmun hazırlığı</option>
+                        <option value="">Qrafika/Dizayn/Video</option>
+                        <option value="">Sosial media/Məhsul təqdimatı</option>
+                        <option value="">Proqram</option>
+                    </select>
+                </div>
+                <div class="third-form pl-4 my-2">
+                    <select name="kateqoriya" id="" class="budget category px-2">
+                        <option value="">Büdcə</option>
+                        <option value="">Hamısı</option>
+                        <option value="">0-50 azn</option>
+                        <option value="">50-100 azn</option>
+                        <option value="">100-200 azn</option>
+                        <option value="">200-500 azn</option>
+                        <option value="">500 və daha çox</option>
+                    </select>
+                </div>
+            </div>
+            <!-- //TOOLS -->
+        </div>
+    </div>
+
+    <!-- ELEMENTS -->
+
+    <div class="cont-elements my-5 pt-4">
+        <div class="layer-elements"></div>
+        <div class="container">
+            <div class="row appendElements">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <!-- <h5 class="mt-3 fake-price">
+                            HTML CSS ve frameworkleri online ders
+                        </h5> -->
+                        <h5 class="mt-3 price">
+                            Logo Dizayn Online program
+                        </h5>
+                        <h3 class="price">
+                            30 azn
+                        </h3>
+                        <!-- <h3 class="fake-price">
+                            50 azn
+                        </h3> -->
+                        <p class="price">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <!-- <p class="fake-price py-2">
+                            Elan
+                        </p> -->
+                        <a href="./inpage.html">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            70 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            30 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            200 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="./work.html">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            25 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="./work.html">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="second-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Logo Dizayn Online program
+                        </h5>
+                        <h3 class="">
+                            65 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Oline mətn yazımı Notebook
+                        </h5>
+                        <h3 class="">
+                            15 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="second-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="second-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="third-box-elements elements px-3 py-2">
+                        <h5 class="mt-3">
+                            Word-lə işçi cədvəli yaratmaq
+                        </h5>
+                        <h3 class="">
+                            50 azn
+                        </h3>
+                        <p class="">
+                            Cok acil matlab odevim icin yardima ihtiyacin var proje detaylari sonra paylasilicak iyi
+                            derece matlab bilenlerin basvurmasi ricam
+                        </p>
+                        <a href="">
+                            <button class="btn-elems px-5 py-2 my-3">
+                                İş gör
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <nav data-pagination>
+                        <a href=# disabled><i class="fas fa-chevron-left"></i></a>
+                        <ul>
+                            <li class=current><a href=#1>1</a>
+                            <li><a href=#2>2</a>
+                            <li><a href=#3>3</a>
+                            <li><a href=#4>4</a>
+                            <li><a href=#5>5</a>
+                            <li><a href=#6>6</a>
+                            <li><a href=#7>7</a>
+                            <li><a href=#8>8</a>
+                            <li><a href=#9>9</a>
+                            <li><a href=#10>…</a>
+                            <li><a href=#41>41</a>
+                        </ul>
+                        <a href=#2><i class="fas fa-chevron-right"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Pagination -->
+
+    <!--=========================== Arrow back =======================-->
+    <div class="arrow-back-section">
+        <div class="arrow-back-mother d-flex justify-content-end">
+            <a href="../HTML/homepage.html">
+                <button onclick="topFunction()" id="myBtn" title="Go to top" class="wow bounceIn">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+    <!--=================== //Arrow back =======================-->
+    <!--===================== //ANNOUNCEMENT SECTION ===============-->
+
+    <!--============================= Footer========================================= -->
+    <footer class="py-5">
+        <div class="overlay-for-footer"></div>
+        <div class="container">
+            <div class="row d-flex flex-row">
+                <!-- first col-5 -->
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <h5 class="py-4 text-light font-for-texts-footer">
+                                TEZ KEÇİDLƏR
+                            </h5>
+                            <div class="border-bottom-mother">
+                                <div class="border-bottom"></div>
+                            </div>
+                            <ul class="footer-ul py-3 pl-0">
+                                <li><a href="./mediaantwork.html">Ə.ç.s.s</a></li>
+                                <li><a href="./question.html">Necə?</a></li>
+                                <li><a href="./contact.html">Əlaqə</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h5 class="py-4 text-light font-for-texts-footer">
+                                SOSIAL
+                            </h5>
+                            <div class="border-bottom-mother">
+                                <div class="border-bottom"></div>
+                            </div>
+                            <ul class="footer-ul py-3 pl-0">
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f pr-2"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter-square"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Google+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram pr-1"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-pinterest-p pr-1"></i>
+                                        Pinterest
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- second col-5 -->
+                <div class="col-md-5">
+                    <h5 class="py-4 text-light font-for-texts-footer">
+                        SON MƏLUMAT
+                    </h5>
+                    <div class="border-bottom-mother">
+                        <div class="border-bottom"></div>
+                    </div>
+                    <p class="py-3 text-light font-for-texts-footer p-item-footer">
+                        Bütün məhsullar əl istehsalı və unikaldır və istehsalçının yaradıcılığından asılı <br>olaraq
+                        məhsul çeşidi dəyişəcək. Mağazamızda tapa biləcəyiniz bəzi məhsul nümunələri.<br> Bizim
+                        facebook səhifəmiz və Instagram yemləri yeni məhsullar gəldiyi zaman yenilənir. <br>Onları
+                        yoxlayın!
+                    </p>
+                </div>
+                <!-- col-2 -->
+                <div class="col-md-2 for-resp">
+                    <form class="py-3">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-light">Ad Soyad</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ad Soyad">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-light">E-mail</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="E-mailinizi daxil edin">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-light">Mesaj yazın</label>
+                            <textarea name="" id="" rows="4" placeholder="Mesajınızı yazın"
+                                class="pl-2 pr-2 pt-2"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light button-footer">Göndər!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--==================================== //Footer============================ -->
+
+    <!--======================== Footer bottom ======================-->
+    <div class="footer-bottom py-4 pl-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="text-center py-4">
+                        Copyright © 2019 Bağırova Təhminə | IT Step Academy.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======================= //Footer bottom====================== -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JS/wow.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

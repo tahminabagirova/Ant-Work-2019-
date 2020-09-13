@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CALENDAR -->
+    <link rel="stylesheet" href="../CSS/jquery-ui.css">
+
+    <!-- Bootstrap CSS, CSS(animate) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- FavIcon -->
+    <link rel="icon" href="/favicon.icon" type="img/ant-logo.ico" />
+    <link rel="shortcut icon" href="../img/ant-logo.png" type="" />
+
+
+    <title>Ana Səhifə</title>
+</head>
+
+<body>
+    <div class="layer-mobile"></div>
+    <div class="layer-edit-profile-items"></div>
+    <!--=================================== HEADER================== -->
+    <header>
+        <div class="nav-ant background-nav-ant">
+            <div class="nav-ant-layer"></div>
+            <div class="container d-flex justify-content-between flex-row">
+                <div class="left-nav-ant d-flex flex-row align-items-center justify-content-start pl-0">
+                    <div class="logo-cont-ant my-2">
+                        <a href="../HTML/homepage.html">
+                            <img src="../img/ant-logo(1).png" alt="" class="logo-ant"></a>
+                    </div>
+                    <div class="menu">
+                        <a href="" class="mx-4 pl-3">
+                            NECƏ?
+                        </a>
+                        <a href="" class="mx-3">
+                            Ə.Ç.S.S
+                        </a>
+                        <a href="" class="mx-3">
+                            ƏLAQƏ
+                        </a>
+                        <a href="" class="mx-3">
+                            İŞLƏRİM
+                        </a>
+                    </div>
+                </div>
+                <div class="right-nav-ant  d-flex flex-row align-items-center justify-content-end pr-0">
+                    <div class="cont-user-btn">
+                        <button class="user-btn">
+                            <i class="fas fa-user pl-1"></i>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <!-- CONT CLICK USER CLICK -->
+                    <div class="cont-click-user d-flex flex-column justify-content-center align-items-center">
+                        <a href="../HTML/profil.html" class="px-5 text-center py-2 border-bottom for-click">Profil</a>
+                        <a href="../HTML/login.html" class="px-5 py-2 text-center border-bottom for-click">Çıxış et</a>
+                    </div>
+                    <!-- //CONT CLICK USER CLICK -->
+                    <div class="cont-bell px-2">
+                        <button class="bell-btn">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                    <!-- CONT BELL CLICK -->
+                    <div class="cont-bell-click d-flex justify-content-center align-items-center">
+                        <p class="child-cont-bell-click text-light text-center px-5 py-1 my-2">Bildirim yoxdur</p>
+                    </div>
+                    <!-- //CONT BELL CLICK -->
+                    <div class="cont-bars">
+                        <button class="bars">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="layer-mobile"></div>
+        <div class="mobile-menu-ant">
+            <div class="child-mobile-menu-ant">
+                <a href="" class="mx-4 my-2 pt-3">
+                    NECƏ?
+                </a>
+                <a href="" class="mx-4 my-2">
+                    Ə.Ç.S.S
+                </a>
+                <a href="" class="mx-4 my-2">
+                    ƏLAQƏ
+                </a>
+                <a href="../HTML/login.html" class="mx-4 my-2 pb-3">
+                    GİRİŞ ET
+                </a>
+            </div>
+            <div class="cont-times">
+                <button class="times">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ================================//HEADER===================== -->
+
+
+    <!-- ========================================PROFILE SECTION====================== -->
+    <div class="profile-section py-5">
+        <div class="container d-flex justify-content-center">
+            <div class="cont-profile d-flex py-5">
+                <div class="row m-0">
+                    <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center p-0">
+                        <div class="left-profile px-5 py-5">
+                            <div class="first mb-4">
+                                <div class="cont-img-profile">
+                                    <img src="../img/8qkUra4Z.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="second">
+                                <div class="input-group bb mb-2">
+                                    <div class="custom-file edit-profile-btn">
+                                        <label for="" class="pl-5 pt-2">Dəyiş</label>
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-right"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 p-0">
+                        <div class="right-profile px-5 w-100">
+                            <div class="cont-p-profile d-flex align-items-center flex-column mt-3">
+                                <p class="font-weight-bold">
+                                    Təhminə Bağırova
+                                </p>
+                                <p class=" py-2"><b>Tamamladığım işlər:</b> 0</p>
+                                <p class=""><b>Oxuduqum yer:</b>IT Step Academy</p>
+                                <p class="py-2"><b>Məzuniyyət ili:</b>2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 p-0">
+                        <div class="right-profile pr-5 w-100">
+                            <div class="cont-p-profile d-flex align-items-center flex-column mt-3">
+                                <p class="text-center"><b>Biliklər:</b>HTML5 CSS3 javaScript jQuery Bootstrap Sass
+                                    Materialize </p>
+                                <p class="py-2"><b>Email:</b>tehmine45bagirova@gmail.com</p>
+                                <div class="cont-edit-btn px-2 pt-5 d-flex justify-content-end">
+                                    <button class="edit-btn">Dəyişiklik et</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================//PROFILE SECTION====================== -->
+
+    <!--==  EDİT PROFİLE İTEMS ===-->
+    <div class="toggler-edit-profile-items">
+        <div class="toggler-edit-profile-items-child">
+            <div class="create-work-pop-up d-flex justify-content-center align-items-center">
+                <div class="child-create-work-pop-up">
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <h5 class="text-center py-4 ml-5 pl-4">Profili dəyiş</h5>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="times-create-work mt-3">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <label for="" class="pl-2">Ad</label>
+                            <form class="form d-flex" action="" method="POST">
+                                <div class="form-group forms-register pl-0 w-100">
+                                    <input type="text" value="Təhminə" class="form-control login-inputs w-100"
+                                        name="fname" placeholder="Ad"
+                                        pattern="^([A-Za-z]{2,10}|([A-Za-z]{2,10}\s[A-Za-z]{0,10})|([A-Za-z]{2,10}\s[A-Za-z]{0,10}\s[A-Za-z]{0,10}))$"
+                                        title="Minimum 1 word, maximum 3 words">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                             <label for="" class="pl-2">Soyad</label>
+                            <form class="form d-flex" action="" method="POST">
+                                <div class="form-group forms-register pl-0 w-100">
+                                    <input type="text" value="Bağırova" class="form-control login-inputs w-100"
+                                        name="fname" placeholder="Soyad"
+                                        pattern="^([A-Za-z]{2,10}|([A-Za-z]{2,10}\s[A-Za-z]{0,10})|([A-Za-z]{2,10}\s[A-Za-z]{0,10}\s[A-Za-z]{0,10}))$"
+                                        title="Minimum 1 word, maximum 3 words">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                    <label for="" class="pl-2">Email</label>
+                                <input type="email" value="tehmine45bagirova@gmail.com"
+                                    class="form-control login-inputs" name="email" placeholder="Email"
+                                    pattern="^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,4}$"
+                                    title="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="" class="pl-2">Şifrə</label>
+                                <input class="form-control login-inputs w-100" placeholder="Şifrə" type="password" value="ugoiohiohioh"
+                                    name="pw" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <button class="btn btn-register finish-btn-create-work mt-2 my-3 w-100 p-0">Dəyiş</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--= // EDİT PROFİLE İTEMS=== -->
+
+    <!--  EDİT PROFİLE İTEMS MOBILE -->
+    <div class="toggler-edit-profile-items-mobile d-flex justify-content-center align-items-center">
+        <div class="toggler-edit-profile-items-child-mobile">
+            <div class="create-work-pop-up d-flex justify-content-center align-items-center">
+                <div class="child-create-work-pop-up">
+                    <div class="row m-0">
+                        <div class="col-lg-10">
+                            <h5 class="text-center py-3">Yeni elan yarat</h5>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="times-create-work mt-3">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="form d-flex my-3 w-100" action="" method="POST">
+                                <select name="category" id="" class="category w-100 px-2">
+                                    <option value="">Kateqoriya</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">Dərs/Tərcümə</option>
+                                    <option value="">Məzmun hazırlığı</option>
+                                    <option value="">Qrafika/Dizayn/Video</option>
+                                    <option value="">Sosial media/Məhsul təqdimatı</option>
+                                    <option value="">Proqram</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="" class="my-3">
+                                <select name="category" id="" class="budget w-100 category px-2">
+                                    <option value="">Büdcə</option>
+                                    <option value="">Hamısı</option>
+                                    <option value="">0-50 azn</option>
+                                    <option value="">50-100 azn</option>
+                                    <option value="">100-200 azn</option>
+                                    <option value="">200-500 azn</option>
+                                    <option value="">500 və daha çox</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php" class="my-3">
+                                <input class="category w-100 pl-2" type="text" id="datepicker" placeholder="Date">
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/action_page.php" class="my-3">
+                                <input class="category w-100 pl-2" type="text" id="datepicker" placeholder="Date">
+                            </form>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-light">Mesaj yazın</label>
+                                <textarea name="" id="" rows="4" placeholder="Ətraflı"
+                                    class="pl-2 pr-2 pt-2"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <button class="btn btn-register finish-btn-create-work mt-2 my-3 w-100 p-0">Yarat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // EDİT PROFİLE İTEMS MOBILE -->
+
+    <!-- SEND WORK POP UP -->
+    <div class="send-work-pop-up d-flex justify-content-center">
+        <div class="child-send-work-pop-up">
+            <div class="text-pop-up-work-send d-flex justify-content-center align-items-center py-5">
+                <span class="text-light">
+                    Elanınız yerləşdirildi!
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- //SEND WORK POP UP -->
+
+
+    <!--============================= Footer========================================= -->
+    <footer class="py-5">
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+        <div class="overlay-for-footer"></div>
+        <div class="container">
+            <div class="row d-flex flex-row">
+                <!-- first col-5 -->
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <h5 class="py-4 text-light font-for-texts-footer">
+                                TEZ KEÇİDLƏR
+                            </h5>
+                            <div class="borer-bottom-mother">
+                                <div class="border-bottom"></div>
+                            </div>
+                            <ul class="footer-ul py-3 pl-0">
+                                <li><a href="./mediaantwork.html">Ə.ç.s.s</a></li>
+                                <li><a href="./question.html">Necə?</a></li>
+                                <li><a href="./contact.html">Əlaqə</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h5 class="py-4 text-light font-for-texts-footer">
+                                SOSIAL
+                            </h5>
+                            <div class="borer-bottom-mother">
+                                <div class="border-bottom"></div>
+                            </div>
+                            <ul class="footer-ul py-3 pl-0">
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f pr-2"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter-square"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Google+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram pr-1"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-pinterest-p pr-1"></i>
+                                        Pinterest
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- second col-5 -->
+                <div class="col-md-5">
+                    <h5 class="py-4 text-light font-for-texts-footer">
+                        SON MƏLUMAT
+                    </h5>
+                    <div class="borer-bottom-mother">
+                        <div class="border-bottom"></div>
+                    </div>
+                    <p class="py-3 text-light font-for-texts-footer p-item-footer">
+                        Bütün məhsullar əl istehsalı və unikaldır və istehsalçının yaradıcılığından asılı <br>olaraq
+                        məhsul çeşidi dəyişəcək. Mağazamızda tapa biləcəyiniz bəzi məhsul nümunələri.<br> Bizim
+                        facebook səhifəmiz və Instagram yemləri yeni məhsullar gəldiyi zaman yenilənir. <br>Onları
+                        yoxlayın!
+                    </p>
+                </div>
+                <!-- col-2 -->
+                <div class="col-md-2 for-resp">
+                    <form class="py-3">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-light">Ad Soyad</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ad Soyad">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-light">E-mail</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="E-mailinizi daxil edin">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-light">Mesaj yazın</label>
+                            <textarea name="" id="" rows="4" placeholder="Mesajınızı yazın"
+                                class="pl-2 pr-2 pt-2"></textarea>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-light button-footer">Göndər!</button>
+                </div>
+            </div>
+            <div class="pop-up-message d-flex justify-content-end">
+                <div class="child-pop-up-message mb-3">
+                    <h6 class="px-1 py-4">
+                        <i class="fas fa-check check pr-1"></i>
+                        Mesajınız uğurla göndərildi...
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--==================================== //Footer============================ -->
+
+    <!--======================== Footer bottom ======================-->
+    <div class="footer-bottom py-4 pl-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="text-center py-4">
+                        Copyright © 2019 Bağırova Təhminə | IT Step Academy.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======================= //Footer bottom====================== -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JS/wow.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
